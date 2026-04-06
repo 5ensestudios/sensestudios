@@ -1,0 +1,56 @@
+@import url('https://googleapis.com');
+@import "tailwindcss";
+
+/* ── Font Faces ── */
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brunson';
+  src: url('/fonts/Brunson.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --font-glacial: "Glacial Indifference", sans-serif;
+  --font-spartan: "League Spartan", sans-serif;
+}
+
+/* ── Global Typography ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-glacial);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-spartan);
+}
+
+/* THE FRIEND branding */
+.the-friend-logo,
+.the-friend-title {
+  font-family: 'Brunson', sans-serif;
+}
+

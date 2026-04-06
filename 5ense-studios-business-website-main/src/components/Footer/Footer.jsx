@@ -1,0 +1,82 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import Logo from '../../assets/images/logo/5ense-logo.png';
+import IGIcon from '../Icons/IGIcon';
+import ThreadsIcon from '../Icons/ThreadsIcon';
+
+const Footer = () => {
+  return (
+    <footer className="bg-black text-white px-6 md:px-45">
+      <div className="flex flex-col md:flex-row items-center justify-between py-8 md:py-12 gap-8">
+        
+        {/* LOGO */}
+        <div className="flex items-center">
+          
+          <img 
+            src={Logo} 
+            alt="5ense-studio logo"
+            className="h-40 md:h-75 object-contain"
+          />
+        </div>
+
+        {/* DIVIDER */}
+        <div className="hidden md:block h-24 w-px bg-white opacity-40"></div>
+
+        {/* LINKS */}
+        <div className="flex flex-col items-center text-sm space-y-3 tracking-widest">
+          <Link
+            to="/"
+            className="hover:text-[#f16d18] transform transition duration-200 hover:scale-105"
+          >
+            ABOUT
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:text-[#f16d18] transform transition duration-200 hover:scale-105"
+          >
+            CONTACT
+          </Link>
+          <Link
+            to="/friend"
+            className="the-friend-title hover:text-[#f16d18] transform transition duration-200 hover:scale-105"
+          >
+            THE FRIEND
+          </Link>
+          <Link
+            to="/account"
+            className="hover:text-[#f16d18] transform transition duration-200 hover:scale-105"
+          >
+            ACCOUNT
+          </Link>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="hidden md:block h-24 w-px bg-white opacity-40"></div>
+
+        {/* ICONS */}
+        <div className="flex items-center gap-8">
+          <a 
+          href="https://www.instagram.com/sensestudios.v/"
+          target='_blank'
+          rel='noopener noreferrer'
+          className='transition-colors duration-300 hover:text-[#f16d18]'
+          >
+            <IGIcon size={50} color="white" />
+          </a>
+          <a
+            href="https://www.threads.com/@sensestudios.v?xmt=AQF05jeuhfp35PvGjK-0EIIn0jMNPYa9Nl7Aukkn5A3WqMo"
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition-colors duration-300 hover:text-[#f16d18]'
+          >
+            <ThreadsIcon size={50} color="white" />
+          </a>
+        </div>
+
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
