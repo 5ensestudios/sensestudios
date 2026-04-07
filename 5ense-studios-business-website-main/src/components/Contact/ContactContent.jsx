@@ -22,14 +22,14 @@ const ContactContent = () => {
       <div className='relative z-10 w-full flex flex-col items-center gap-8'>
 
       {/* Heading */}
-      <h1 className='text-white text-4xl md:text-5xl font-bold text-center'>
+      <h1 className='text-white text-5xl md:text-7xl font-bold text-center'>
         Get in <span className='text-[#f16d18]'>touch</span> with us
       </h1>
 
       {/* Form Card */}
       <form
         onSubmit={handleSubmit}
-        className='bg-[#111113] rounded-3xl p-10 flex flex-col gap-5 w-full max-w-lg'
+        className='bg-[#111113] rounded-3xl p-8 flex flex-col gap-5 w-full max-w-xl'
       >
         {/* Full Name */}
         <div className='flex flex-col gap-1'>
@@ -71,7 +71,7 @@ const ContactContent = () => {
         <div className='flex justify-center mt-2'>
           <button
             type='submit'
-            className='bg-[#f16d18] hover:bg-[#d45e10] transition-colors duration-200 text-white text-xs tracking-widest px-10 py-2 rounded-md cursor-pointer'
+            className='bg-[#f16d18] hover:bg-[#d45e10] transition-colors duration-200 text-white text-xs tracking-widest px-10 py-2 rounded-full cursor-pointer'
           >
             SEND MESSAGE
           </button>

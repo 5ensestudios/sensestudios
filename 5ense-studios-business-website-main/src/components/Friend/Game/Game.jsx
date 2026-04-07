@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import GrungeTexture from '../../../assets/images/Texture/Grunge.jpg'
+import GrungeTexture from '../../../assets/images/Texture/Paper.jpg'
 const demoPoster = '/FRIEND POSTER - DEMO.png'
 const finalPoster = '/FRIEND Poster.png'
 
@@ -9,10 +9,10 @@ const Game = () => {
   return (
     <div className='relative min-h-screen bg-[#1F1F21] flex items-center justify-center px-6 overflow-hidden'>
       <img src={GrungeTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none" />
-      <div className="absolute inset-0 bg-[#1a1a1c] opacity-50"></div>
+      <div className="absolute inset-0 bg-[#1a1a1c] opacity-70"></div>
       <div className='w-full max-w-5xl flex flex-col items-center text-center relative z-10'>
         
-        <h1 className='text-3xl md:text-5xl text-white font-bold mb-10'>
+        <h1 className='text-4xl sm:text-5xl md:text-6xl text-white font-bold mb-10 mt-20'>
           Ready to take on the case?
         </h1>
 
@@ -54,7 +54,7 @@ const Game = () => {
 
         </div>
 
-        <h3 className='text-2xl md:text-4xl text-white font-light mt-10 text-center py-10'>
+        <h3 className='text-2xl md:text-4xl text-white font-light mb-10 text-center py-10'>
           More downloadable content to come in the future...
         </h3>
 

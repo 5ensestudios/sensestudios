@@ -8,7 +8,7 @@ const Title = () => {
           src="/FRIEND LOGO .png" 
           alt="FRIEND Logo"
           style={{
-            maxWidth: "clamp(8rem, 50vw, 30rem)",
+            maxWidth: "clamp(220px, 40vw, 500px)",
             height: "auto",
             display: "block",
             margin: "0 auto"

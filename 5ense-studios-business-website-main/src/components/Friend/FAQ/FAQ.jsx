@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import GrungeTexture from '../../../assets/images/Texture/Grunge.jpg'
+import GrungeTexture from '../../../assets/images/Texture/Paper.jpg'
 
 const faqs = [
   {
@@ -48,13 +48,13 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQ = () => {
   return (
-    <div className='relative bg-[#1F1F21] py-24 px-6 md:px-45 overflow-hidden'>
+    <div className='relative bg-[#1F1F21] py-35 px-6 md:px-45 overflow-hidden'>
       <img src={GrungeTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none" />
-      <div className="absolute inset-0 bg-[#1F1F21] opacity-50"></div>
+      <div className="absolute inset-0 bg-[#1a1a1c] opacity-70"></div>
       <div className='w-full relative z-10'>
 
         {/* Header */}
-        <h2 className='text-white text-3xl md:text-4xl font-bold text-center mb-2 tracking-tight'>
+        <h2 className='text-white text-3xl md:text-6xl font-bold text-center mb-2 tracking-tight'>
           Gameplay &amp; Support
         </h2>
         <div className='w-full border-t border-white/20 mt-6 mb-2'></div>

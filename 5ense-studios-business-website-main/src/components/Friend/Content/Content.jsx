@@ -1,5 +1,5 @@
 import React from 'react'
-import GrungeTexture from '../../../assets/images/Texture/Grunge.jpg'
+import GrungeTexture from '../../../assets/images/Texture/Paper.jpg'
 import MenuPrototype from '../../../assets/images/main menu prototype.png'
 
 const FriendClipPath = new URL('../../../assets/videos/THE FRIEND - Clip.mp4', import.meta.url).href
@@ -8,10 +8,10 @@ const Content = () => {
   return (
     <div className='relative min-h-screen bg-[#1F1F21] flex items-center py-20 px-6 md:px-45 overflow-hidden' style={{ zIndex: 0 }}>
       <img src={GrungeTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none" />
-      <div className="absolute inset-0 bg-[#1a1a1c] opacity-50"></div>
+      <div className="absolute inset-0 bg-[#1a1a1c] opacity-70"></div>
       <div className='w-full pt-24 relative z-10'>
-        <div className="font-mono text-white text-lg md:text-xl leading-relaxed mb-10 space-y-3 w-full text-justify">
-          <p>
+        <div className="font-mono text-white text-md md:text-lg leading-relaxed mb-22 space-y-3 w-full text-justify mt-1 md:mt-10">
+          <p className="mb-8">
             At 02:14 AM, emergency services responded to a 911 call from a residential home.
             Upon arrival, paramedics found the victim, Chris, unresponsive. Four "friends" were
             found at the scene.
