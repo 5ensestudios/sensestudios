@@ -16,7 +16,7 @@ const Footer = () => {
           <img 
             src={Logo} 
             alt="5ense-studio logo"
-            className="h-40 md:h-75 object-contain"
+            className="h-24 md:h-50 w-auto block object-left"
           />
         </div>
 

@@ -48,7 +48,7 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQ = () => {
   return (
-    <div className='relative bg-[#111113] py-24 px-6 md:px-45 overflow-hidden'>
+    <div className='relative bg-[#1F1F21] py-24 px-6 md:px-45 overflow-hidden'>
       <img src={GrungeTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none" />
       <div className="absolute inset-0 bg-[#1F1F21] opacity-50"></div>
       <div className='w-full relative z-10'>

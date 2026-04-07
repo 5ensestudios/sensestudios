@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import PaperTexture from '../../assets/images/Texture/Paper.jpg'
-const FriendThumb = '/FRIEND Logo.png'
+const FriendThumb = '/FRIEND Poster.png'
 
 const AccountContent = () => {
   const navigate = useNavigate()

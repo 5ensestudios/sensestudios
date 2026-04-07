@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import GrungeTexture from '../../../assets/images/Texture/Grunge.jpg'
-const img1 = '/FRIEND Logo.png'
+const demoPoster = '/FRIEND POSTER - DEMO.png'
+const finalPoster = '/FRIEND Poster.png'
 
 const Game = () => {
   const navigate = useNavigate()
@@ -15,12 +16,12 @@ const Game = () => {
           Ready to take on the case?
         </h1>
 
-        <div className='bg-black rounded-3xl p-6 md:p-12 w-full flex flex-col md:flex-row gap-8 md:gap-12 justify-center items-center'>
+        <div className='bg-[#111113] rounded-3xl p-6 md:p-12 w-full flex flex-col md:flex-row gap-8 md:gap-12 justify-center items-center'>
           
-          {/* Card 1 */}
+          {/* Card 1 - Demo */}
           <div className='flex flex-col items-center text-center flex-1'>
             <img 
-              src={img1} 
+              src={demoPoster} 
               alt="" 
               className='w-60 h-80 object-cover bg-gray-500 mb-6 rounded-xl'
             />
@@ -34,10 +35,10 @@ const Game = () => {
             </button>
           </div>
 
-          {/* Card 2 */}
+          {/* Card 2 - Final */}
           <div className='flex flex-col items-center text-center flex-1'>
             <img 
-              src={img1} 
+              src={finalPoster} 
               alt="" 
               className='w-60 h-80 object-cover bg-gray-500 mb-6 rounded-xl'
             />
