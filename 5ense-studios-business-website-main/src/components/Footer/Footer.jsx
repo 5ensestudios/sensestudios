@@ -71,13 +71,13 @@ const Footer = () => {
         {/* ICONS — desktop (size 42) */}
         <div className="hidden md:flex items-center gap-8">
           <a href="https://www.instagram.com/sensestudios.v/" target='_blank' rel='noopener noreferrer' className='transition-colors duration-300 hover:text-[#f16d18]'>
-            <IGIcon size={42} color="white" />
+            <IGIcon size={35} color="white" />
           </a>
           <a href="https://www.threads.com/@sensestudios.v?xmt=AQF05jeuhfp35PvGjK-0EIIn0jMNPYa9Nl7Aukkn5A3WqMo" target='_blank' rel='noopener noreferrer' className='transition-colors duration-300 hover:text-[#f16d18]'>
-            <ThreadsIcon size={42} color="white" />
+            <ThreadsIcon size={35} color="white" />
           </a>
           <a href="https://www.youtube.com/c/sensestudios" target='_blank' rel='noopener noreferrer' className='transition-colors duration-300 hover:text-[#f16d18]'>
-            <YoutubeFillIcon size={42} color="white" />
+            <YoutubeFillIcon size={35} color="white" />
           </a>
         </div>
 
