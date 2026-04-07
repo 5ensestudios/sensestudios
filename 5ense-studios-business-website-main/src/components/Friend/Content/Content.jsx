@@ -1,5 +1,8 @@
 import React from 'react'
 import GrungeTexture from '../../../assets/images/Texture/Grunge.jpg'
+import MenuPrototype from '../../../assets/images/main menu prototype.png'
+
+const FriendClipPath = new URL('../../../assets/videos/THE FRIEND - Clip.mp4', import.meta.url).href
 
 const Content = () => {
   return (
@@ -21,25 +24,31 @@ const Content = () => {
         {/* Video + carousel wrapper — same width */}
         <div className="w-full">
 
-          {/* YouTube video embed placeholder */}
-          <div className="relative w-full aspect-video bg-[#1a1a1a] rounded-sm overflow-hidden flex items-center justify-center mb-4 border border-white/10">
-            <button className="flex items-center justify-center w-20 h-14 rounded-xl bg-red-600 hover:bg-red-500 transition-colors shadow-2xl">
-              <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
+          {/* Video embed */}
+          <div className="relative w-full aspect-video bg-[#1a1a1a] rounded-sm overflow-hidden mb-4 border border-white/10">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              poster={MenuPrototype}
+            >
+              <source src={FriendClipPath} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
-          {/* Thumbnail carousel — exact same width as video, arrows overlaid */}
+          {/* Thumbnail carousel with images */}
           <div className="relative w-full flex items-center mt-4">
             {/* Thumbnails */}
             <div className="flex gap-3 w-full">
               {[0, 1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="flex-1 bg-[#1a1a1a] border border-white/10 rounded-sm"
-                  style={{ aspectRatio: '16/9' }}
-                />
+                <div key={i} className="flex-1 relative overflow-hidden rounded-sm border border-white/10">
+                  <img
+                    src={MenuPrototype}
+                    alt={`Clip ${i + 1}`}
+                    className="w-full h-full object-cover"
+                    style={{ aspectRatio: '16/9' }}
+                  />
+                </div>
               ))}
             </div>
 
