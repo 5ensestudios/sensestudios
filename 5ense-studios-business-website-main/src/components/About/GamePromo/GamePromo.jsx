@@ -13,11 +13,11 @@ const GamePromo = () => {
 
         {/* Header */}
         <h2 className='mb-8 leading-snug'>
-          <span className='text-white text-2xl md:text-4xl font-medium'>
+          <span className='text-white text-xl md:text-4xl font-medium'>
             Immerse yourself with our latest:{' '}
           </span>
           <span
-            className='the-friend-title text-[#f16d18] font-black uppercase text-6xl md:text-7xl'
+            className='the-friend-title text-[#f16d18] font-black uppercase text-7xl md:text-7xl'
             style={{ letterSpacing: '0.04em' }}
           >
             THE FRIEND

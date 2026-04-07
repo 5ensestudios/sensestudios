@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* Center: Logo (mobile — clickable home) / Nav links (desktop) */}
         <div className="flex items-center justify-center md:hidden">
           <Link to="/" onClick={() => setMenuOpen(false)}>
-            <img src={Logo} alt="5ense Studio Logo" className="w-20" />
+            <img src={Logo} alt="5ense Studio Logo" className="w-25" />
           </Link>
         </div>
         <div className="hidden md:flex flex-1 items-center gap-3 md:gap-4">
