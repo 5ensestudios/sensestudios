@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
 //compoenent imports
 import Text from '../components/About/Hero/HeroText.jsx';
@@ -13,15 +13,26 @@ const BGvideo = '/Teaser.mp4'
 
 
 const About = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(() => {});
+    }
+  }, []);
+
   return (
     <div className='min-h-screen'>
       <video 
+      ref={videoRef}
       className='fixed top-0 left-0 w-full h-full object-cover bg -z-10'
       autoPlay
       loop
       muted
       playsInline
       disablePictureInPicture
+      preload="auto"
       src={BGvideo}
       />
 
