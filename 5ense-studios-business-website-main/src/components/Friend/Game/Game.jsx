@@ -29,7 +29,7 @@ const Game = () => {
               Try out the demo and get a taste of the narrative and characters! 
               Who knows, you might just want the entire version.
             </p>
-            <button onClick={() => navigate('/account')} className="bg-[#2f4b4b] px-10 py-2 rounded-full text-white text-sm font-medium 
+            <button onClick={() => navigate('/account')} className="bg-[#2f4b4b] px-5 py-2 rounded-full text-white text-sm font-medium 
               hover:bg-[#3f6b6b] transition duration-300 uppercase">
               Try The Demo
             </button>
@@ -46,7 +46,7 @@ const Game = () => {
               Try out the demo and get a taste of the narrative and characters! 
               Who knows, you might just want the entire version.
             </p>
-            <button onClick={() => navigate('/account')} className=" bg-[#2f4b4b] px-10 py-2 rounded-full text-white text-sm font-medium 
+            <button onClick={() => navigate('/account')} className=" bg-[#2f4b4b] px-5 py-2 rounded-full text-white text-sm font-medium 
               hover:bg-[#3f6b6b] transition duration-300 uppercase">
               Try The Demo
             </button>

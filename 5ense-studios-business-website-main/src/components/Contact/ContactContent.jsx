@@ -71,7 +71,7 @@ const ContactContent = () => {
         <div className='flex justify-center mt-2'>
           <button
             type='submit'
-            className='bg-[#f16d18] hover:bg-[#d45e10] transition-colors duration-200 font-mono text-white text-xs px-8 py-2.5 rounded-full cursor-pointer'
+            className='bg-[#f16d18] hover:bg-[#d45e10] transition-colors duration-200 font-mono text-white text-xs px-5 md:px-8 py-2.5 rounded-full cursor-pointer'
           >
             SEND MESSAGE
           </button>
