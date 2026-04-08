@@ -1,4 +1,5 @@
 @import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 
 /* ── Font Faces ── */
@@ -33,6 +34,7 @@
 @theme {
   --font-glacial: "Glacial Indifference", sans-serif;
   --font-spartan: "League Spartan", sans-serif;
+  --font-mono: "Space Mono", monospace;
 }
 
 /* ── Global Typography ── */
@@ -44,8 +46,9 @@ body {
   font-family: var(--font-glacial);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: var(--font-spartan);
+  font-weight: bold;
 }
 
 /* THE FRIEND branding */

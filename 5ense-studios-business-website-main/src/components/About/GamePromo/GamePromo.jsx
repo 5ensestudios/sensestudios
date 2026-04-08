@@ -12,20 +12,20 @@ const GamePromo = () => {
       <div className='relative z-10 w-full'>
 
         {/* Header */}
-        <h2 className='mb-8 leading-snug'>
-          <span className='text-white text-xl md:text-4xl font-medium'>
+        <h2 className='mb-6'>
+          <span className='font-spartan font-bold text-white text-2xl md:text-4xl tracking-[-0.063em]'>
             Immerse yourself with our latest:{' '}
           </span>
           <span
-            className='the-friend-title text-[#f16d18] font-black uppercase text-7xl md:text-7xl'
-            style={{ letterSpacing: '0.04em' }}
+            className='the-friend-title block md:inline-block text-[#f16d18] font-black uppercase text-[60px] md:text-[90px]'
+            style={{ letterSpacing: '0.063em' }}
           >
             THE FRIEND
           </span>
         </h2>
 
         {/* Description */}
-        <p className='text-zinc-300 text-base md:text-2xl leading-relaxed mb-4 md:mb-10 text-justify'>
+        <p className='text-white text-base md:text-2xl leading-relaxed mb-4 md:mb-10 text-justify tracking-[-0.043em]'>
           One accidental crime and a circle of friends. In this immersive experience,
           cross-examine a cold case involving four friends and uncover the real truth
           in their stories.
@@ -34,7 +34,7 @@ const GamePromo = () => {
         {/* CTA */}
         <button
           onClick={() => navigate('/friend')}
-          className='bg-[#f16d18] text-white text-xs md:text-sm tracking-widest uppercase px-5 py-1.5 md:px-20 md:py-3 rounded-full hover:bg-[#d45e10] transition duration-200'
+          className='bg-[#f16d18] text-white text-xs md:text-sm tracking-widest uppercase px-5 py-1.5 md:px-10 md:py-2 rounded-full hover:bg-[#d45e10] transition duration-200'
         >
           Learn More
         </button>

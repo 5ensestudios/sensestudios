@@ -18,13 +18,13 @@ const HeroText = () => {
       <div className="flex gap-4">
         <button
           onClick={() => navigate('/friend')}
-          className='bg-[#f16d18] px-8 md:px-12 py-2 rounded-full text-sm font-glacial tracking-wide hover:bg-[#d45e10] transition duration-200 cursor-pointer uppercase'>
+          className='bg-[#f16d18] px-8 md:px-10 py-2 rounded-full text-sm font-glacial tracking-wide hover:bg-[#d45e10] transition duration-200 cursor-pointer uppercase'>
           Sneak Peek
         </button>
 
         <button
-          onClick={scrollToContent}
-          className='border border-white px-8 md:px-12 py-2 rounded-full uppercase text-sm font-glacial tracking-wide hover:bg-white hover:text-black transition duration-200 cursor-pointer'>
+          onClick={() => navigate('/friend')}
+          className='border border-white px-8 md:px-10 py-2 rounded-full uppercase text-sm font-glacial tracking-wide hover:bg-white hover:text-black transition duration-200 cursor-pointer'>
           Learn More
         </button>
       </div>

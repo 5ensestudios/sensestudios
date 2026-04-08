@@ -37,11 +37,14 @@ const FAQItem = ({ question, answer }) => {
         </svg>
       </button>
 
-      {open && (
+      {/* Smooth expand/collapse animation */}
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+      >
         <p className='text-zinc-400 text-sm leading-relaxed pb-5'>
           {answer}
         </p>
-      )}
+      </div>
     </div>
   )
 }
@@ -54,13 +57,13 @@ const FAQ = () => {
       <div className='w-full relative z-10'>
 
         {/* Header */}
-        <h2 className='text-white text-3xl md:text-6xl font-bold text-center mb-2 tracking-tight'>
+        <h1 className='text-white text-3xl md:text-[60px] text-center mb-2 tracking-[-0.063em]'>
           Gameplay &amp; Support
-        </h2>
+        </h1>
         <div className='w-full border-t border-white/20 mt-6 mb-2'></div>
 
         {/* FAQ Items */}
-        <div className='w-full'>
+        <div className='font-glacial w-full text-2xl md:text-[18px] tracking-[-0.043em]'>
           {faqs.map((faq, i) => (
             <FAQItem key={i} question={faq.question} answer={faq.answer} />
           ))}

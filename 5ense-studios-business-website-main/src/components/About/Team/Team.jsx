@@ -8,18 +8,18 @@ import JR from '../../../assets/images/Team/haerin-frontside.jpg'
 import Nathan from '../../../assets/images/Team/danielle-frontside.jpg'
 
 const TeamMembers = [
-  { name: 'Christian Tan', role: 'Marketing Coordinator', image: Christian },
-  { name: 'Eana Mae Tagana', role: 'Creative Director & Project Manager', image: Eana },
-  { name: 'Fredrick Arago', role: 'Visual Editor & Media Producer', image: Fredrick },
-  { name: 'John Richard Roble', role: 'Frontend Developer', image: JR },
-  { name: 'Nathan Bartolo', role: 'Lead Developer & Sound Designer', image: Nathan },
+  { name: 'Christian\nTan', role: 'Marketing Coordinator', image: Christian },
+  { name: 'Eana Mae\nTagana', role: 'Creative Director & Project Manager', image: Eana },
+  { name: 'Fredrick\nArago', role: 'Visual Editor & Media Producer', image: Fredrick },
+  { name: 'John Richard\nRoble', role: 'Frontend Developer', image: JR },
+  { name: 'Nathan\nBartolo', role: 'Lead Developer & Sound Designer', image: Nathan },
 ]
 
 const Team = () => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className='relative flex items-center px-6 md:px-45 py-20 bg-[#1a1a1c] overflow-hidden'>
+    <div className='relative flex items-center px-6 md:px-45 py-20 pb-50 bg-[#1a1a1c] overflow-hidden'>
       {/* Paper texture bg */}
       <img
         src={PaperTexture}
@@ -29,8 +29,8 @@ const Team = () => {
 
         {/* Header */}
         <div className='flex justify-end mb-4'>
-          <h1 className='text-white text-4xl md:text-5xl font-semibold tracking-tight leading-none uppercase'>
-            Meet the Team
+          <h1 className='text-white text-4xl md:text-[53px] font-bold tracking-[-0.063em] leading-none'>
+            Meet the team 
           </h1>
         </div>
 
@@ -63,10 +63,10 @@ const Team = () => {
 
               {/* Info */}
               <div className="mt-3 px-1">
-                <h2 className="text-white font-bold text-xl md:text-xl leading-none mt-1">
+                <h2 className="font-glacial text-white text-[19px] md:text-[22px] mt-2 mb-0.5 leading-[1.09em] whitespace-pre-line ">
                   {member.name}
                 </h2>
-                <p className="text-zinc-400 text-sm md:text-base italic">
+                <p className="font-glacial text-white text-xs md:text-[11px] italic">
                   {member.role}
                 </p>
               </div>

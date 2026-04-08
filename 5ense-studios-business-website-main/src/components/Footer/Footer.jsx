@@ -13,12 +13,13 @@ const Footer = () => {
         
         {/* LOGO */}
         <div className="flex items-center">
-          
-          <img 
+          <Link to="/" className="cursor-pointer">
+            <img 
             src={Logo} 
             alt="5ense-studio logo"
             className="h-35 md:h-50 w-auto block object-left"
-          />
+            />
+          </Link>
         </div>
 
         {/* DIVIDER */}

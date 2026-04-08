@@ -48,7 +48,7 @@ const Navbar = () => {
           </button>
           <button
             onClick={() => navigate("/friend")}
-            className="font-spartan border border-white px-7 py-2 rounded-full text-sm tracking-widest cursor-pointer transition-all duration-200 hover:bg-white hover:text-black"
+            className="font-spartan border border-white px-10 py-2 rounded-full text-sm tracking-widest cursor-pointer transition-all duration-200 hover:bg-white hover:text-black"
           >
             THE FRIEND
           </button>
@@ -69,7 +69,9 @@ const Navbar = () => {
 
         {/* ── DESKTOP right logo ── */}
         <div className="hidden md:flex flex-1 items-center justify-end">
-          <img src={Logo} alt="5ense Studio Logo" className="w-36" />
+          <Link to="/" className="cursor-pointer">
+            <img src={Logo} alt="5ense Studio Logo" className="w-36" />
+          </Link>
         </div>
       </nav>
 

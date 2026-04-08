@@ -3,15 +3,15 @@ import PaperTexture from '../../../assets/images/Texture/Paper.jpg'
 
 const AboutContent = () => {
   return (
-    <div id="about-content" className="relative flex items-center bg-[#1F2021] px-6 md:px-45 pt-50 pb-35 overflow-hidden">
+    <div id="about-content" className="relative flex items-center bg-[#1F2021] px-6 md:px-45 pt-50 pb-50 overflow-hidden">
       <img src={PaperTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.80] pointer-events-none" />
       <div className="absolute inset-0 bg-[#1a1a1c] opacity-70"></div>
       <div className="w-full relative z-10">
-        <h2 className="text-2xl md:text-5xl font-medium text-white mb-4">
+        <h2 className=" font-spartan text-2xl md:text-[53px] font-bold text-white mb-0 tracking-[-0.063em]">
           Experience real games with
         </h2>
 
-        <h1 className="text-5xl md:text-8xl font-extrabold text-[#f16d18] mb-6">
+        <h1 className="text-5xl md:text-[100px] font-extrabold text-[#f16d18] mb-2 tracking-[-0.063em]">
           5ENSE STUDIOS.
         </h1>
 
