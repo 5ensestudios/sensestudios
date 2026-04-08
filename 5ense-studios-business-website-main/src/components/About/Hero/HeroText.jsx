@@ -10,7 +10,7 @@ const HeroText = () => {
 
   return (
     <div className='min-h-screen flex flex-col justify-end pb-15 px-6 md:px-45 gap-5 text-white'>
-      <h1 className='the-friend-title font-bold tracking-tight leading-none'
+      <h1 className='the-friend-title font-bold tracking-tight leading-none whitespace-nowrap'
        style={{ letterSpacing: "0.05em",
         fontSize: "clamp(75px, 11vw, 140px)"
         }}>THE FRIEND</h1>
