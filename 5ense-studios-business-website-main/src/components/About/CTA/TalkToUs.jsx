@@ -19,7 +19,7 @@ const TalkToUs = () => {
         <p className='text-white text-3xl md:text-5xl mb-1 tracking-[-0.063em]'>
           Want to work with us?
         </p>
-        <h1 className='text-white text-[80px] md:text-9xl tracking-[-0.063em]'>
+        <h1 className='text-white text-[80px] md:text-9xl tracking-[-0.063em] whitespace-nowrap'>
           Talk to us!
         </h1>
       </div>

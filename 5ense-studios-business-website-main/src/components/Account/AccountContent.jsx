@@ -26,7 +26,7 @@ const AccountContent = () => {
         {/* Avatar + Greeting */}
         <div className='flex items-center gap-4 mb-2'>
           <div className='w-10 h-10 md:w-14 md:h-14 rounded-full bg-zinc-600 shrink-0' />
-          <h1 className='text-white text-[36px] md:text-[72px] tracking-[-0.063em]'>
+          <h1 className='text-white text-[36px] md:text-[72px] tracking-[-0.063em] whitespace-nowrap'>
             Hello, <span className='text-[#f16d18]'>{displayName}</span>!
           </h1>
         </div>
