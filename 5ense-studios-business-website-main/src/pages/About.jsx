@@ -21,6 +21,7 @@ const About = () => {
       loop
       muted
       playsInline
+      disablePictureInPicture
       src={BGvideo}
       />
 

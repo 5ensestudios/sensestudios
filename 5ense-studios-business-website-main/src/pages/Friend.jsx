@@ -16,6 +16,7 @@ const Friend = () => {
         loop
         muted
         playsInline
+        disablePictureInPicture
         src={BGVideo}
         />
         <div className="fixed top-0 left-0 w-full h-full bg-black/20 -z-10"></div>

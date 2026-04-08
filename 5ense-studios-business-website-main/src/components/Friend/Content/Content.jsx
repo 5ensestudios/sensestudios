@@ -28,7 +28,10 @@ const Content = () => {
           <div className="relative w-full aspect-video bg-[#1a1a1a] rounded-sm overflow-hidden mb-4 border border-white/10">
             <video
               className="w-full h-full object-cover"
-              controls
+              autoPlay
+              loop
+              muted
+              playsInline
               poster={MenuPrototype}
             >
               <source src={FriendClipPath} type="video/mp4" />
