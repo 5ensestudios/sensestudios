@@ -93,7 +93,7 @@ const AccountContent = () => {
 
           {/* Delete Account — right col */}
           <div className='flex items-end'>
-            <button className='font-mono w-full mt-3 bg-red-800 hover:bg-red-700 text-white text-xs tracking-[0.043em] uppercase py-2.5 rounded-full transition duration-200'>
+            <button className='font-mono w-full mt-3 bg-red-800 hover:bg-red-700 text-white text-xs tracking-[0.043em] uppercase py-2.5 rounded-[10px] transition duration-200'>
               Delete Account
             </button>
           </div>
@@ -121,8 +121,8 @@ const AccountContent = () => {
               alt='The Friend'
               className='w-20 h-26 md:w-30 md:h-38 object-cover rounded-xl shrink-0'
             />
-            <div className='flex flex-col gap-2 items-center'>
-              <p className='font-spartan text-white font-bold text-[36px] md:text-[40px] tracking-[-0.043em] text-center'>The Friend</p>
+            <div className='flex-1 flex flex-col items-center justify-center gap-0'>
+              <p className='font-spartan text-white font-bold text-[36px] md:text-[40px] leading-none tracking-[-0.043em] text-center'>The Friend</p>
               <button
                 onClick={() => navigate('/friend')}
                 className='bg-[#f16d18] hover:bg-[#d45e10] text-white text-xs md:text-[13px] uppercase px-15 md:px-20 py-1.5 md:py-2.5 rounded-full transition duration-200 tracking-[-0.043em]'
@@ -139,8 +139,8 @@ const AccountContent = () => {
               alt='The Friend'
               className='w-20 h-26 md:w-30 md:h-38 object-cover rounded-xl shrink-0'
             />
-            <div className='flex flex-col gap-2 items-center'>
-              <p className='font-spartan text-white font-bold text-[36px] md:text-[40px] tracking-[-0.043em] text-center'>The Friend</p>
+            <div className='flex-1 flex flex-col items-center justify-center gap-0'>
+              <p className='font-spartan text-white font-bold text-[36px] md:text-[40px] leading-none tracking-[-0.043em] text-center'>The Friend</p>
               <button
                 onClick={() => navigate('/friend')}
                 className='bg-[#f16d18] hover:bg-[#d45e10] text-white text-xs md:text-[13px] uppercase px-15 md:px-20 py-1.5 md:py-2.5 rounded-full transition duration-200 tracking-[-0.043em]'

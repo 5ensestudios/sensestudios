@@ -17,7 +17,7 @@ const Footer = () => {
             <img 
             src={Logo} 
             alt="5ense-studio logo"
-            className="h-35 md:h-50 w-auto block object-left"
+            className="h-20 md:h-22 w-auto mb-7 md:mb-0 block object-left"
             />
           </Link>
         </div>

@@ -12,12 +12,12 @@ const GamePromo = () => {
       <div className='relative z-10 w-full'>
 
         {/* Header */}
-        <h2 className='mb-6'>
-          <span className='font-spartan font-bold text-white text-2xl md:text-4xl tracking-[-0.063em]'>
+        <h2 className='mb-0 md:mb-0'>
+          <span className='font-spartan font-bold text-white text-[26px] md:text-[36px] tracking-[-0.063em] leading-none'>
             Immerse yourself with our latest:{' '}
           </span>
           <span
-            className='the-friend-title block md:inline-block text-[#f16d18] font-black uppercase text-[60px] md:text-[90px]'
+            className='the-friend-title block md:inline-block mt-[-10px] text-[#f16d18] font-black uppercase text-[60px] md:text-[90px]'
             style={{ letterSpacing: '0.063em' }}
           >
             THE FRIEND

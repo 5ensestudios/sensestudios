@@ -13,13 +13,13 @@ const TalkToUs = () => {
       
       <div
         // 2. Removed rounded-[4rem], hover:brightness-110, and transition
-        className='relative z-10 w-full bg-[#f16d18] flex flex-col items-center justify-center py-30 px-10 text-center cursor-pointer'
+        className='relative z-10 w-full bg-[#f16d18] flex flex-col items-center justify-center py-28 md:py-30 px-10 text-center cursor-pointer'
     
       >
-        <p className='text-white text-3xl md:text-5xl mb-1 tracking-[-0.063em]'>
+        <p className='text-white text-3xl md:text-5xl mb-0 md:mb-1 tracking-[-0.063em] leading-none'>
           Want to work with us?
         </p>
-        <h1 className='text-white text-[80px] md:text-9xl tracking-[-0.063em] whitespace-nowrap'>
+        <h1 className='text-white text-[80px] md:text-9xl mt-[-5px] tracking-[-0.063em] whitespace-nowrap'>
           Talk to us!
         </h1>
       </div>

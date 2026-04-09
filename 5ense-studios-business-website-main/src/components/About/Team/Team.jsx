@@ -9,10 +9,10 @@ import Nathan from '../../../assets/images/Team/danielle-frontside.jpg'
 
 const TeamMembers = [
   { name: 'Christian\nTan', role: 'Marketing Coordinator', image: Christian },
-  { name: 'Eana Mae\nTagana', role: 'Creative Director & Project Manager', image: Eana },
-  { name: 'Fredrick\nArago', role: 'Visual Editor & Media Producer', image: Fredrick },
+  { name: 'Eana Mae\nTagana', role: 'Creative Director &\nProject Manager', image: Eana },
+  { name: 'Fredrick\nArago', role: 'Visual Editor &\nMedia Producer', image: Fredrick },
   { name: 'John Richard\nRoble', role: 'Frontend Developer', image: JR },
-  { name: 'Nathan\nBartolo', role: 'Lead Developer & Sound Designer', image: Nathan },
+  { name: 'Nathan\nBartolo', role: 'Lead Developer &\nSound Designer', image: Nathan },
 ]
 
 const Team = () => {
@@ -66,7 +66,7 @@ const Team = () => {
                 <h2 className="font-glacial text-white text-[19px] md:text-[22px] mt-2 mb-0.5 leading-[1.09em] whitespace-pre-line ">
                   {member.name}
                 </h2>
-                <p className="font-glacial text-white text-xs md:text-[11px] italic">
+                <p className="font-glacial text-white text-xs md:text-[11px] italic whitespace-pre-line">
                   {member.role}
                 </p>
               </div>
