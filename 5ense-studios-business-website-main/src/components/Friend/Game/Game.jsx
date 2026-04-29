@@ -43,12 +43,12 @@ const Game = () => {
               className='w-60 h-80 object-cover bg-gray-500 mb-6 rounded-xl'
             />
             <p className=' font-glacial text-white mb-4 max-w-60 text-left'>
-              Try out the demo and get a taste of the narrative and characters! 
-              Who knows, you might just want the entire version.
+              Experience the full case and uncover the truth behind that night. 
+              Every detail matters more than you think.
             </p>
-            <button onClick={() => navigate('/account')} className=" bg-[#2f4b4b] px-5 py-2 rounded-full text-white text-sm font-medium 
+            <button onClick={() => window.location.href = 'https://thefriend.vercel.app/'} className=" bg-[#2f4b4b] px-5 py-2 rounded-full text-white text-sm font-medium 
               hover:bg-[#3f6b6b] transition duration-300 uppercase">
-              Try The Demo
+              Try The Full Version
             </button>
           </div>
 
