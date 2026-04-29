@@ -6,28 +6,26 @@ const FriendClipPath = new URL('../../../assets/videos/THE FRIEND - Clip.mp4', i
 
 const Content = () => {
   return (
-    <div className='relative min-h-screen bg-[#1F1F21] flex items-center py-19 md:py-25 pb-30 px-6 md:px-45 overflow-hidden' style={{ zIndex: 0 }}>
-      <img src={GrungeTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none" />
-      <div className="absolute inset-0 bg-[#1a1a1c] opacity-70"></div>
-      <div className='w-full pt-24 relative z-10'>
-        <div className="font-mono text-white text-md md:text-[17.5px] leading-[1.4] mb-22 w-full text-justify mt-0 md:mt-5 tracking-[-0.043em]">
-          <p className=" mb-10">
+    <section className='friend-content site-gutter'>
+      <img src={GrungeTexture} alt='' className='texture-layer texture-layer--grunge' />
+      <div className='tone-layer tone-layer--dark' />
+      <div className='friend-content__content'>
+        <div className='friend-content__body'>
+          <div className='friend-content__lore'>
+            <p>
             At 02:14 AM, emergency services responded to a 911 call from a residential home.
             Upon arrival, paramedics found the victim, Chris, unresponsive. Four "friends" were
             found at the scene.
-          </p>
-          <p>
+            </p>
+            <p>
             The footage has been recovered. The cloud data is yours to navigate.
-          </p>
-        </div>
+            </p>
+          </div>
 
-        {/* Video + carousel wrapper — same width */}
-        <div className="w-full">
-
-          {/* Video embed */}
-          <div className="relative w-full aspect-video bg-[#1a1a1a] rounded-sm overflow-hidden mb-4 border border-white/10">
+          <div className='friend-content__media'>
+            <div className='friend-content__video-frame'>
             <video
-              className="w-full h-full object-cover"
+              className='friend-content__video'
               autoPlay
               loop
               muted
@@ -37,33 +35,29 @@ const Content = () => {
               <source src={FriendClipPath} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
+            </div>
 
-          {/* Thumbnail carousel with images */}
-          <div className="relative w-full flex items-center mt-4">
-            {/* Thumbnails */}
-            <div className="flex gap-3 w-full">
+            <div className='friend-content__thumb-row'>
+              <div className='friend-content__thumbs'>
               {[0, 1, 2, 3].map((i) => (
-                <div key={i} className="flex-1 relative overflow-hidden rounded-sm border border-white/10">
+                <div key={i} className='friend-content__thumb'>
                   <img
                     src={MenuPrototype}
                     alt={`Clip ${i + 1}`}
-                    className="w-full h-full object-cover"
-                    style={{ aspectRatio: '16/9' }}
+                    className='friend-content__thumb-image'
                   />
                 </div>
               ))}
+              </div>
+
+              <button className='friend-content__nav-arrow friend-content__nav-arrow--left'>‹</button>
+              <button className='friend-content__nav-arrow friend-content__nav-arrow--right'>›</button>
             </div>
-
-            {/* Arrows overlaid */}
-            <button className="absolute left-0 -translate-x-6 text-white/60 hover:text-white text-2xl font-bold">‹</button>
-            <button className="absolute right-0 translate-x-6 text-white/60 hover:text-white text-2xl font-bold">›</button>
           </div>
-
         </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Content
+export default Content;

@@ -1,5 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import './App.css';
+
+import Navbar from './components/Navbar/navbar.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import About from './pages/About.jsx';
+import Friend from './pages/Friend.jsx';
+import Account from './pages/Account.jsx';
+import Contact from './pages/Contact.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -7,36 +15,25 @@ function ScrollToTop() {
   return null;
 }
 
-import './App.css'
-
-
-
-//component imports
-
-import Navbar  from './components/Navbar/navbar.jsx';  
-import Footer from './components/Footer/Footer.jsx';
-
-import About from './pages/About.jsx'
-import Friend from './pages/Friend.jsx';
-import Account from './pages/Account.jsx';
-import Contact from './pages/Contact.jsx';
 function App() {
 
   return (
-    <div className=''>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className='app-shell'>
         <ScrollToTop />
         <Navbar />
-        <Routes>
-          <Route path='/' element={<About />} />
-          <Route path='/friend' element={<Friend />} />
-          <Route path='/account' element={<Account />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
+        <main className='app-main'>
+          <Routes>
+            <Route path='/' element={<About />} />
+            <Route path='/friend' element={<Friend />} />
+            <Route path='/account' element={<Account />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </main>
         <Footer />
-      </BrowserRouter>
-    </div>
-  )
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

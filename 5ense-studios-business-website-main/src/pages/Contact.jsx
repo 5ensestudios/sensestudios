@@ -3,7 +3,7 @@ import ContactContent from '../components/Contact/ContactContent';
 
 const Contact = () => {
   return (
-    <div className='bg-[#1a1a1c]'>
+    <div className='page-shell page-shell--dark contact-page'>
       <ContactContent />
     </div>
   );

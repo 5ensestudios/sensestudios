@@ -38,17 +38,18 @@ const UserIcon = ({
         filter: shadow > 0 ? `drop-shadow(0 ${shadow}px ${shadow * 2}px rgba(0,0,0,0.3))` : undefined,
         backgroundColor: background !== 'transparent' ? background : undefined
       }}
+      color={color} // Ensures currentColor is set
     >
       <g
-  fill="none"
-  stroke="currentColor"
-  strokeLinecap="round"
-  strokeLinejoin="round"
-  strokeWidth={strokeWidth}
->
-  <circle cx="12" cy="8" r="5" />
-  <path d="M20 21a8 8 0 0 0-16 0" />
-    </g>
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={strokeWidth}
+      >
+        <circle cx="12" cy="8" r="5" />
+        <path d="M20 21a8 8 0 0 0-16 0" />
+      </g>
     </svg>
   );
 };

@@ -23,22 +23,22 @@ const About = () => {
   }, []);
 
   return (
-    <div className='min-h-screen'>
-      <video 
-      ref={videoRef}
-      className='fixed top-0 left-0 w-full h-full object-cover bg -z-10'
-      autoPlay
-      loop
-      muted
-      playsInline
-      disablePictureInPicture
-      preload="auto"
-      src={BGvideo}
+    <div className='page-shell page-shell--video'>
+      <video
+        ref={videoRef}
+        className='page-video'
+        autoPlay
+        loop
+        muted
+        playsInline
+        disablePictureInPicture
+        preload='auto'
+        src={BGvideo}
       />
 
-      <div className="fixed top-0 left-0 w-full h-full bg-black/70 -z-10"></div>
+      <div className='page-overlay page-overlay--heavy' />
 
-      <div className=''>
+      <div className='section-stack'>
         <Text />
         <Content />
         <Team />
@@ -46,9 +46,7 @@ const About = () => {
         <GamePromo />
       </div>
     </div>
+  );
+};
 
-
-  )
-}
-
-export default About
+export default About;

@@ -18,25 +18,27 @@ const Friend = () => {
   }, []);
 
   return (
-    <div className='min-h-screen'>
-        <video 
+    <div className='page-shell page-shell--video'>
+        <video
         ref={videoRef}
-        className='fixed top-0 left-0 w-full h-full object-cover bg -z-10'
+        className='page-video'
         autoPlay
         loop
         muted
         playsInline
         disablePictureInPicture
-        preload="auto"
+        preload='auto'
         src={BGVideo}
         />
-        <div className="fixed top-0 left-0 w-full h-full bg-black/20 -z-10"></div>
+        <div className='page-overlay'></div>
+        <div className='section-stack'>
         <Title />
         <Content />
         <Game />
         <FAQ />
+        </div>
     </div>
-  )
-}
+  );
+};
 
-export default Friend
+export default Friend;

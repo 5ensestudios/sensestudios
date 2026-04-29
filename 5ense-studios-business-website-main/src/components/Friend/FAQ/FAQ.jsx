@@ -20,14 +20,14 @@ const FAQItem = ({ question, answer }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='border-b border-white/20'>
+    <div className='faq-item'>
       <button
-        className='w-full flex items-center justify-between py-5 text-left text-white text-sm md:text-base tracking-wide hover:opacity-70 transition duration-200'
+        className='faq-item__trigger'
         onClick={() => setOpen(!open)}
       >
-        <span>{question}</span>
+        <span className='faq-item__question'>{question}</span>
         <svg
-          className={`w-5 h-5 shrink-0 ml-4 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+          className={`faq-item__icon ${open ? 'faq-item__icon--open' : ''}`}
           fill='none'
           stroke='currentColor'
           strokeWidth='2'
@@ -37,11 +37,10 @@ const FAQItem = ({ question, answer }) => {
         </svg>
       </button>
 
-      {/* Smooth expand/collapse animation */}
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`faq-item__answer-wrap ${open ? 'faq-item__answer-wrap--open' : ''}`}
       >
-        <p className='text-zinc-400 text-sm leading-relaxed pb-5'>
+        <p className='faq-item__answer'>
           {answer}
         </p>
       </div>
@@ -51,27 +50,23 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQ = () => {
   return (
-    <div className='relative bg-[#1F1F21] py-35 px-6 md:px-45 overflow-hidden'>
-      <img src={GrungeTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none" />
-      <div className="absolute inset-0 bg-[#1a1a1c] opacity-70"></div>
-      <div className='w-full relative z-10'>
-
-        {/* Header */}
-        <h1 className='text-white text-3xl md:text-[60px] text-center mb-2 tracking-[-0.063em]'>
+    <section className='faq-section site-gutter'>
+      <img src={GrungeTexture} alt='' className='texture-layer texture-layer--grunge' />
+      <div className='tone-layer tone-layer--dark' />
+      <div className='faq-section__content'>
+        <h1 className='faq-section__heading'>
           Gameplay &amp; Support
         </h1>
-        <div className='w-full border-t border-white/20 mt-6 mb-2'></div>
+        <div className='faq-section__divider'></div>
 
-        {/* FAQ Items */}
-        <div className='font-glacial w-full text-2xl md:text-[18px] tracking-[-0.043em]'>
+        <div className='faq-section__list'>
           {faqs.map((faq, i) => (
             <FAQItem key={i} question={faq.question} answer={faq.answer} />
           ))}
         </div>
-
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default FAQ
+export default FAQ;
