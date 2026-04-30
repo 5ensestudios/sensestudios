@@ -48,7 +48,7 @@ const Game = () => {
             </p>
             <button onClick={() => window.location.href = 'https://thefriend.vercel.app/'} className=" bg-[#2f4b4b] px-5 py-2 rounded-full text-white text-sm font-medium 
               hover:bg-[#3f6b6b] transition duration-300 uppercase">
-              Try The Full Version
+              Play the game
             </button>
           </div>
 
