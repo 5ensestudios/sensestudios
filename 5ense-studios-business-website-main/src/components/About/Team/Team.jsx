@@ -12,13 +12,15 @@ const TeamMembers = [
     name: 'Christian\nTan',
     role: 'Marketing Coordinator',
     image: Christian,
-    zoom: 'scale-180',
-    position: '0px 40px'
+    zoom: 'scale-190',
+    position: '0px 40px',
   },
   { 
     name: 'Eana Mae\nTagana',
     role: 'Creative Director &\nProject Manager',
-    image: Eana
+    image: Eana,
+    zoom: 'scale-120',
+    position: '-12px 20px'
   },
   { 
     name: 'Fredrick\nArago',
@@ -28,14 +30,16 @@ const TeamMembers = [
   { 
     name: 'John Richard\nRoble',
     role: 'Frontend Developer',
-    image: JR
+    image: JR,
+    zoom: 'scale-115',
+    position: '0px 10px'
   },
   { 
     name: 'Nathan\nBartolo',
     role: 'Lead Developer &\nSound Designer',
     image: Nathan,
     zoom: 'scale-145',
-    position: '0px 35px'
+    position: '-1px 35px'
   },
 ]
 
@@ -86,7 +90,7 @@ const Team = () => {
                 <img
                   src={member.image}  
                   alt={member.name}
-                  className={`w-full h-full object-cover transition-transform duration-500 ${
+                  className={`w-full h-full object-cover transition-transform duration-500 grayscale ${
                     member.zoom || ''
                   }`}
                   style={{

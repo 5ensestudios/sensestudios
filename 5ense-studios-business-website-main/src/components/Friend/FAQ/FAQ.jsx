@@ -4,16 +4,32 @@ import GrungeTexture from '../../../assets/images/Texture/Paper.jpg'
 const faqs = [
   {
     question: 'What is THE FRIEND?',
-    answer: 'THE FRIEND is an interactive FMV (Full Motion Video) detective game where players uncover the truth by watching clips, analyzing clues, and making choices that influence how the story unfolds.',
+    answer: 'THE FRIEND is an interactive FMV (Full Motion Video) game where players investigate a 2016 cold case by watching recovered clips and navigating conflicting stories to find out what happened.',
   },
   {
     question: 'How do I play the game?',
-    answer: 'Players explore the story through video clips, dialogue, and interactive elements on the website. By paying attention to details and clues, you can piece together the mystery and progress through the narrative.',
+    answer: 'The game plays out like a simulated computer desktop right in your browser. You will manually open folders and files to review video footage. As you progress, your access becomes restricted, forcing you to choose how to continue the story.',
   },
   {
     question: 'Do I need to download anything to play?',
-    answer: 'No downloads are required. THE FRIEND is a browser-based game, meaning you can play it directly on the website from your computer or device.',
+    answer: 'No downloads are required. THE FRIEND is a browser-based game, meaning you can play it directly from 5ENSE website. it is best experienced on PC or Laptop for full immersion.',
   },
+  {
+    question: 'How long is the game?',
+    answer: 'A standard playthrough takes 20-30 mins, though it can take longer if you really dive into the immersion and explore everything on the desktop.',
+  },
+  {
+    question: 'Is this a true story?',
+    answer: 'No. While it is designed to feel like a real "true crime" rabbit hole, the story is entirely fictional.',
+  },
+  {
+    question: 'How can i provide feedback?',
+    answer: 'Your feedback is incredibly valuable as we prepare to launch our offical beta testing phase soon. You can share your thoughts, report any issues, or tell us your theories through this account, our website, or our email at 5ense.studios2026@gmail.com',
+  },
+  {
+    question: 'Who is Brunson?',
+    answer: 'Well... you\'d have to play the game to find out!',
+  }
 ]
 
 const FAQItem = ({ question, answer }) => {

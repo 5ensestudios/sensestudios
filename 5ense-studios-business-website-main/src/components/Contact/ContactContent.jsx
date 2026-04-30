@@ -5,6 +5,10 @@ import PaperTexture from '../../assets/images/Texture/Paper.jpg'
 import IGIcon from '../Icons/IGIcon'
 import YoutubeFillIcon from '../Icons/YoutubeFillIcon'
 
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
 const ContactContent = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [loading, setLoading] = useState(false)
@@ -17,18 +21,23 @@ const ContactContent = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      setStatus('missing-config')
+      return
+    }
+
     setLoading(true)
     setStatus('')
 
     emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
       {
         from_name: form.name,
         from_email: form.email,
         message: form.message,
       },
-      'YOUR_PUBLIC_KEY'
+      EMAILJS_PUBLIC_KEY
     )
     .then(() => {
       setLoading(false)
@@ -109,13 +118,7 @@ const ContactContent = () => {
               {loading ? 'SENDING...' : 'SEND MESSAGE'}
             </button>
 
-            {/* Status Messages */}
-            {status === 'success' && (
-              <p className='text-green-400 text-xs'>Message sent successfully.</p>
-            )}
-            {status === 'error' && (
-              <p className='text-red-400 text-xs'>Failed to send message.</p>
-            )}
+      
           </div>
 
         </form>

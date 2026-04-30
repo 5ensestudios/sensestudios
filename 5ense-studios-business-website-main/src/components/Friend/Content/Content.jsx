@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GrungeTexture from '../../../assets/images/Texture/Paper.jpg'
 import MenuPrototype from '../../../assets/images/main menu prototype.png'
 
@@ -7,13 +7,35 @@ import Gallery1 from '../../../assets/gallery/gallery 1.png'
 import Gallery2 from '../../../assets/gallery/gallery 2.png'
 import Gallery3 from '../../../assets/gallery/gallery 3.png'
 import Gallery4 from '../../../assets/gallery/gallery 4.png'
+import Gallery5 from '../../../assets/gallery/gallery 5.png'  
+import Gallery6 from '../../../assets/gallery/gallery 6.png'
+import Gallery7 from '../../../assets/gallery/gallery 7.png'
+import Gallery8 from '../../../assets/gallery/gallery 8.png'
 
 const FriendClipPath = new URL('../../../assets/gallery/gallery showcase.mp4', import.meta.url).href
 
 const Content = () => {
+  const [galleryPage, setGalleryPage] = useState(0)
 
-  
-  const galleryImages = [Gallery1, Gallery2, Gallery3, Gallery4]
+  const galleryImages = [Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6, Gallery7, Gallery8]
+  const pageSize = 4
+  const galleryPageCount = Math.ceil(galleryImages.length / pageSize)
+  const visibleGalleryImages = galleryImages.slice(
+    galleryPage * pageSize,
+    galleryPage * pageSize + pageSize
+  )
+
+  const handlePreviousGalleryPage = () => {
+    setGalleryPage((currentPage) =>
+      currentPage === 0 ? galleryPageCount - 1 : currentPage - 1
+    )
+  }
+
+  const handleNextGalleryPage = () => {
+    setGalleryPage((currentPage) =>
+      currentPage === galleryPageCount - 1 ? 0 : currentPage + 1
+    )
+  }
 
   return (
     <div className='relative min-h-screen bg-[#1F1F21] flex items-center py-19 md:py-25 pb-30 px-6 md:px-45 overflow-hidden' style={{ zIndex: 0 }}>
@@ -23,14 +45,18 @@ const Content = () => {
 
       <div className='w-full pt-24 relative z-10'>
         
-        <div className="font-mono text-white text-md md:text-[17.5px] leading-[1.4] mb-22 w-full text-justify mt-0 md:mt-5 tracking-[-0.043em]">
+        <div className="font-mono text-white text-md md:text-[21px] leading-[1.4] mb-22 w-full text-justify mt-0 md:mt-5 tracking-[-0.043em]">
           <p className=" mb-10">
-            At 02:14 AM, emergency services responded to a 911 call from a residential home.
-            Upon arrival, paramedics found the victim, Chris, unresponsive. Four "friends" were
-            found at the scene.
+            At 2:14 AM, emergency services responded to a 911 call from a private residence in Oak Ridge Creeks. 
           </p>
-          <p>
-            The footage has been recovered. The cloud data is yours to navigate.
+          <p className='mb-10'>
+            Upon arrival, paramedics found the victim, Chris, unresponsive. Four of his friends remained at the scene. They claimed it was a prank—a harmless attempt to get back at a friend. A joke that simply went too far.
+          </p>
+          <p className='mb-10'>
+            By 4:00 AM, the four friends were each sitting in an interogation room, every one recounting their night.
+          </p>
+          <p className='mb-10'>
+            These are their stories. 
           </p>
         </div>
 
@@ -56,14 +82,14 @@ const Content = () => {
           <div className="relative w-full flex items-center mt-4">
             
             <div className="flex gap-3 w-full">
-              {galleryImages.map((img, i) => (
+              {visibleGalleryImages.map((img, i) => (
                 <div
-                  key={i}
+                  key={galleryPage * pageSize + i}
                   className="flex-1 relative overflow-hidden rounded-sm border border-white/10 group"
                 >
                   <img
                     src={img}
-                    alt={`Clip ${i + 1}`}
+                    alt={`Clip ${galleryPage * pageSize + i + 1}`}
                     className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                     style={{ aspectRatio: '16/9' }}
                   />
@@ -72,14 +98,40 @@ const Content = () => {
             </div>
 
             {/* Arrows */}
-            <button className="absolute left-0 -translate-x-6 text-white/60 hover:text-white text-2xl font-bold">
+            <button
+              type="button"
+              onClick={handlePreviousGalleryPage}
+              className="absolute left-0 -translate-x-6 text-white/60 hover:text-white text-5xl font-bold"
+              aria-label="Previous gallery items"
+            >
               ‹
             </button>
-            <button className="absolute right-0 translate-x-6 text-white/60 hover:text-white text-2xl font-bold">
+            <button
+              type="button"
+              onClick={handleNextGalleryPage}
+              className="absolute right-0 translate-x-6 text-white/60 hover:text-white text-5xl font-bold"
+              aria-label="Next gallery items"
+            >
               ›
             </button>
 
+            
+
           </div>
+          <div className="font-mono text-white text-md md:text-[21px] leading-[1.4] mb-22 w-full text-justify mt-0 md:mt-20 tracking-[-0.043em]">
+          <p className=" mb-10">
+            <span className="font-bold">Navigate the Interface</span> - The system operates like a real computer desktop right in your browser. You will need to manually open files and folders to begin.
+          </p>
+          <p className='mb-10'>
+            <span className="font-bold">Watch the Footage</span> - The core piece to your investigation are the video files. Watch the recovered interviews closely to piece together the timeline of what happened.
+          </p>
+          <p className='mb-10'>
+            <span className="font-bold">Choose Your Perspectives</span> - You will not hear everyone's side of the story. As you dig deeper, your access becomes restricted. You will frequently be forced to choose. Decide whose perspective you need—or suspect—the most.
+          </p>
+          <p className='mb-10'>
+            <span className="font-bold">Connect the Pieces</span> - Explore the files to gain context, navigate the story, and ultimately make your choice. The rest is for you to uncover.
+          </p>
+        </div>
 
         </div>
       </div>
