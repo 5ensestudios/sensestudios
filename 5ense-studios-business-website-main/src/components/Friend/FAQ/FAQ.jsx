@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: 'Do I need to download anything to play?',
-    answer: 'No downloads are required. THE FRIEND is a browser-based game, meaning you can play it directly from 5ENSE website. it is best experienced on PC or Laptop for full immersion.',
+    answer: 'No downloads are required. THE FRIEND is a browser-based game, meaning you can play it directly from 5ENSE website. It is best experienced on PC or Laptop for full immersion.',
   },
   {
     question: 'How long is the game?',

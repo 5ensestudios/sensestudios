@@ -9,7 +9,7 @@ import Gallery3 from '../../../assets/gallery/gallery 3.png'
 import Gallery4 from '../../../assets/gallery/gallery 4.png'
 
 
-const FriendClipPath = new URL('../../../assets/gallery/gallery showcase.mp4', import.meta.url).href
+const FriendClipPath = new URL('../../../assets/gallery/8 - Gameplay (1).mp4', import.meta.url).href
 
 const Content = () => {
   const [galleryPage, setGalleryPage] = useState(0)

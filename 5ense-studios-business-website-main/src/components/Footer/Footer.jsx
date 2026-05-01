@@ -45,12 +45,6 @@ const Footer = () => {
           >
             THE FRIEND
           </Link>
-          <Link
-            to="/account"
-            className="hover:text-[#f16d18] transform transition duration-200 hover:scale-105"
-          >
-            ACCOUNT
-          </Link>
         </div>
 
         {/* DIVIDER */}

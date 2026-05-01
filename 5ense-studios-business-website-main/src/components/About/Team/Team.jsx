@@ -20,7 +20,7 @@ const TeamMembers = [
     
   },
   { 
-    name: 'Fredrick\nArago',
+    name: 'Frederick\nArago',
     role: 'Visual Editor &\nMedia Producer',
     image: Fredrick
   },
