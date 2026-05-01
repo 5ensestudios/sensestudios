@@ -7,17 +7,14 @@ import Gallery1 from '../../../assets/gallery/gallery 1.png'
 import Gallery2 from '../../../assets/gallery/gallery 2.png'
 import Gallery3 from '../../../assets/gallery/gallery 3.png'
 import Gallery4 from '../../../assets/gallery/gallery 4.png'
-import Gallery5 from '../../../assets/gallery/gallery 5.png'  
-import Gallery6 from '../../../assets/gallery/gallery 6.png'
-import Gallery7 from '../../../assets/gallery/gallery 7.png'
-import Gallery8 from '../../../assets/gallery/gallery 8.png'
+
 
 const FriendClipPath = new URL('../../../assets/gallery/gallery showcase.mp4', import.meta.url).href
 
 const Content = () => {
   const [galleryPage, setGalleryPage] = useState(0)
 
-  const galleryImages = [Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6, Gallery7, Gallery8]
+  const galleryImages = [Gallery1, Gallery2, Gallery3, Gallery4,]
   const pageSize = 4
   const galleryPageCount = Math.ceil(galleryImages.length / pageSize)
   const visibleGalleryImages = galleryImages.slice(
@@ -43,7 +40,7 @@ const Content = () => {
       <img src={GrungeTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none" />
       <div className="absolute inset-0 bg-[#1a1a1c] opacity-70"></div>
 
-      <div className='w-full pt-24 relative z-10'>
+      <div className='w-full pt-10 md:pt-24 relative z-10'>
         
         <div className="font-mono text-white text-md md:text-[21px] leading-[1.4] mb-22 w-full text-justify mt-0 md:mt-5 tracking-[-0.043em]">
           <p className=" mb-10">
@@ -97,28 +94,12 @@ const Content = () => {
               ))}
             </div>
 
-            {/* Arrows */}
-            <button
-              type="button"
-              onClick={handlePreviousGalleryPage}
-              className="absolute left-0 -translate-x-6 text-white/60 hover:text-white text-5xl font-bold"
-              aria-label="Previous gallery items"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              onClick={handleNextGalleryPage}
-              className="absolute right-0 translate-x-6 text-white/60 hover:text-white text-5xl font-bold"
-              aria-label="Next gallery items"
-            >
-              ›
-            </button>
+  
 
             
 
           </div>
-          <div className="font-mono text-white text-md md:text-[21px] leading-[1.4] mb-22 w-full text-justify mt-0 md:mt-20 tracking-[-0.043em]">
+          <div className="font-mono text-white text-md md:text-[21px] leading-[1.4] mb-0 md:mb-22 w-full text-justify mt-10 md:mt-20 tracking-[-0.043em]">
           <p className=" mb-10">
             <span className="font-bold">Navigate the Interface</span> - The system operates like a real computer desktop right in your browser. You will need to manually open files and folders to begin.
           </p>

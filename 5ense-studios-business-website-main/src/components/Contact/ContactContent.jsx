@@ -127,7 +127,7 @@ const ContactContent = () => {
         <div className='bg-[#111113] rounded-full px-10 py-5 flex items-center gap-8'>
 
           {/* Mail */}
-          <a href='mailto:sensestudios@example.com' className='text-white hover:text-[#f16d18] transition-colors'>
+          <a href='mailto:5ense.studios2026@gmail.com' className='text-white hover:text-[#f16d18] transition-colors'>
             <svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='currentColor'>
               <path d='M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z'/>
             </svg>

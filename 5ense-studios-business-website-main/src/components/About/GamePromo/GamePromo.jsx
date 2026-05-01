@@ -34,7 +34,7 @@ const GamePromo = () => {
         {/* CTA */}
         <button
           onClick={() => navigate('/friend')}
-          className='bg-[#f16d18] text-white text-xs md:text-sm tracking-widest uppercase px-5 py-1.5 md:px-10 md:py-2 rounded-full hover:bg-[#d45e10] transition duration-200'
+          className='bg-[#f16d18] px-5 md:px-10 py-2 rounded-full text-sm font-glacial tracking-wide hover:bg-[#d45e10] transition duration-200 cursor-pointer uppercase text-white'
         >
           Learn More
         </button>

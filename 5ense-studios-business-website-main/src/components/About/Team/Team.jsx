@@ -1,26 +1,23 @@
 import React, { useState } from 'react'
 import PaperTexture from '../../../assets/images/Texture/Paper.jpg'
 
-import Christian from '../../../assets/images/Team/Team - Christian.jpeg'
+import Christian from '../../../assets/images/Team/Team - Christian.png'
 import Eana from '../../../assets/images/Team/Team - Eana.png'
-import Fredrick from '../../../assets/images/Team/Team - Fred.jpg'
-import JR from '../../../assets/images/Team/Team - JR.jpg'
-import Nathan from '../../../assets/images/Team/Team - Nathan.jpg'
+import Fredrick from '../../../assets/images/Team/Team - Fred.png'
+import JR from '../../../assets/images/Team/Team - JR.png'
+import Nathan from '../../../assets/images/Team/Team - Nathan.png'
 
 const TeamMembers = [
   { 
     name: 'Christian\nTan',
     role: 'Marketing Coordinator',
     image: Christian,
-    zoom: 'scale-190',
-    position: '0px 40px',
   },
   { 
     name: 'Eana Mae\nTagana',
     role: 'Creative Director &\nProject Manager',
     image: Eana,
-    zoom: 'scale-120',
-    position: '-12px 20px'
+    
   },
   { 
     name: 'Fredrick\nArago',
@@ -31,15 +28,11 @@ const TeamMembers = [
     name: 'John Richard\nRoble',
     role: 'Frontend Developer',
     image: JR,
-    zoom: 'scale-115',
-    position: '0px 10px'
   },
   { 
     name: 'Nathan\nBartolo',
     role: 'Lead Developer &\nSound Designer',
     image: Nathan,
-    zoom: 'scale-145',
-    position: '-1px 35px'
   },
 ]
 
@@ -67,7 +60,7 @@ const Team = () => {
         </div>
 
         {/* Grid - Mobile: 2 cols, Tablet: 3 cols, Surface Pro/MD: 4 cols, Desktop: 5 cols */}
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 lg:gap-5' id="team-grid">
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-4 lg:gap-5' id="team-grid">
           {TeamMembers.map((member, index) => (
             <div
               key={index}
